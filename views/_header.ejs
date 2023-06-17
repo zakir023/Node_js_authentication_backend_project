@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/header.css" />
+
+<header>
+  
+<nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+    <!-- Navbar content -->
+ <a class="navbar-brand" style="margin-left: 80px" href="/"
+      >Team Career Camp
+    </a>
+    
+    <ul class="nav nav-pills" style="position: absolute; right: 0px; left: 15vw; margin-top:5px">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/student/add-student-page">Linkedin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/download/report-download">Github</a>
+      </li>
+
+      <% if(locals.user){ %>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/users/profile"> <%= user.name %></a>
+      </li>
+      <ul class="nav nav-pills" style="position: absolute; right: 0px; left: 68vw; ">
+      
+      <li class="nav-item">
+        <a class="nav-link active "  style="margin-right: 10px;" href="/users/changepass">Change Password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active "  href="/users/sign-out">Sign Out</a>
+      </li>
+    </ul>
+      <ul/>
+      <%}else{%>
+        <ul class="nav nav-pills" style="position: absolute; right: 0px; left: 72vw; margin-top:5px">
+      <a class="btn btn-primary" href="/users/sign-in">SIGN IN</a>
+  
+      <a class="btn btn-primary" style="margin-left: 10px" href="/users/sign-up"
+        >SIGN UP</a
+      >
+      <%}%>
+  </ul>
+</nav>
+
+</header>

@@ -1,0 +1,78 @@
+p,
+h1 {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-image: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/bg-size-2000px.png?f=webp&w=720");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: brown; */
+  background-image: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720");
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 94vh;
+  justify-content: space-evenly;
+}
+.main {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.side {
+  border: 2px solid red;
+  width: 17%;
+}
+.user-c {
+  /* border: 2px solid wheat; */
+  display: flex;
+  padding: 0;
+  /* margin: 0%; */
+}
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+}
+.data h1 {
+  color: white;
+  padding: 1%;
+}
+.user-info {
+  color: white;
+  padding: 1%;
+  /* border: 2px solid wheat; */
+}
+
+.cp-div {
+  background-color: antiquewhite;
+  padding: 0.5%;
+  width: 12%;
+  margin-left: 5%;
+}
+.cp-div a {
+  color: #1d0c5a;
+  font-size: 1.5rem;
+}
